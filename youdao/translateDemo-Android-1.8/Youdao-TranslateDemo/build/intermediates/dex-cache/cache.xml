@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_fe675dce241c4fa85844b992afc0658873670767.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_9f8a383fb26734f6697cfb1cdddf26c63a6e9b4e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\libs\YoudaoTranslateOffline.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="afca3a0bb8db92a50f540c69d44b9d86f5242d84">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\YoudaoTranslateOffline_4bce14cb0714649600cb21ef43e2ef23e1c806b7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_14596868b58c1ecbadff76d3e9dd5433a3c4dbe4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_196241dded5d6a7b03e585979ff29be3af41cf64.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_18f374b4953f43f220254c3402b9a9e4fc93819b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_a0bb73dc24d4d53735d66df8bf1a82f3af457ed1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_59053fb69706a598f0c5ece7cf7eeca74bae9b53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_b33a6e4aec3c34f0dfc3bef8030173a2cb5d0fa7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\libs\YoudaoBase.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f8fa7e1fe817d0f26e7b006edcffac519b6162b3">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\YoudaoBase_02c371ca4d42a3e4c94b5ad03c7bb98c0e25f02f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\libs\YoudaoTranslateOnline.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="82956269c6854e06b5aec4f3e01a1f7b8d091a7a">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\YoudaoTranslateOnline_4de630895fe20bdc20b3ce3e9b212e3c0934db28.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_120074412fb0f9bb2b65d54ee0d6302f2e8709b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_2d286c1f8e66f7bb7ea9e1f0493710c599aea24e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_dcc95b4a04278c0d69fc16b5f4fdb67f4c7f87dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\liuyanyan\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_0ab9a3a3f8476ff2cad56edeb01bf7455327da7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\libs\YoudaoCnDictOffline.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bbf9e2aeffcd98fd905fc8053f779e643ff28810">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\YoudaoCnDictOffline_dd7acb59fa98366c7aa7de8334fb555284893e03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_71cdc48b4e917c921132486599b787d98bd44c83.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_1b3ae9af0ec37201b58d81991929ec85146e906d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="D:\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_b483b97951080e7b410f2a21e1bfe706d08d20e8.jar" />
+    </item>
+
+</items>

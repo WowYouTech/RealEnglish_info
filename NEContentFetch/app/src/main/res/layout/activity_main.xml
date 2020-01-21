@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FetchActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <Button
+        android:id="@+id/toolButtonFetchGood"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:textSize="22dp"
+        android:text="Fetch Good"
+        android:singleLine="true"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/common_blue_bg"
+        />
+
+    <Button
+        android:id="@+id/toolButton1"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:textSize="22dp"
+        android:text="Fetch"
+        android:singleLine="true"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/common_blue_bg"
+        />
+    <Button
+        android:id="@+id/toolButtonImport"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:textSize="22dp"
+        android:text="Import"
+        android:singleLine="true"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/common_blue_bg"
+        />
+
+
+    <Button
+        android:id="@+id/toolButtonCleanUp"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:textSize="22dp"
+        android:text="CleanUp"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/common_blue_bg"
+        />
+
+    <Button
+        android:id="@+id/toolButtonPreProcess"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:textSize="22dp"
+        android:text="Pre-Process"
+        android:singleLine="true"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/common_blue_bg"
+        android:visibility="gone"
+        />
+
+    
+    <Button
+        android:id="@+id/toolButton2"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:textSize="22dp"
+        android:text="Sort - 1"
+        android:singleLine="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/common_blue_bg"
+        />
+
+    <Button
+        android:id="@+id/toolButton3"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:textSize="22dp"
+        android:text="Filter"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/common_blue_bg"
+        />
+
+    <Button
+        android:id="@+id/toolButton4"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:textSize="22dp"
+        android:text="Filter Real"
+        android:singleLine="true"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/common_blue_bg"
+        />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/app/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\test\\translateDemo-Android-1.8\\Youdao-TranslateDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\test\\translateDemo-Android-1.8\\Youdao-TranslateDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\workdir\\traslateSdk\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\workdir\\traslateSdk\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\workdir\\traslateSdk\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\workdir\\traslateSdk\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\workdir\\traslateSdk\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\workdir\\traslateSdk\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/app/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\test\\translateDemo-Android-1.8\\Youdao-TranslateDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\test\\translateDemo-Android-1.8\\Youdao-TranslateDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/app/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\test\\translateDemo-Android-1.8\\Youdao-TranslateDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\test\\translateDemo-Android-1.8\\Youdao-TranslateDemo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-v21\\abc_edit_text_material.xml"
+    }
+]

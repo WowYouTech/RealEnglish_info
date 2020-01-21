@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="YoudaoBase">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/yd-ocr-demo/libs/YoudaoBase.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FetchActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent" android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            />
+        <Button
+            android:id="@+id/exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8sp"
+            android:text="Exit"
+            android:singleLine="true"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/common_blue_bg"
+            />
+    </LinearLayout>
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_player"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:layout_width="match_parent"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Difficulty:"
+                    />
+                <com.llollox.androidprojects.compoundbuttongroup.CompoundButtonGroup
+                    android:id="@+id/levels"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:entries="@array/level_sort"
+                    app:compoundType="radio"
+                    app:numCols="3"
+                    app:labelOrder="after"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Category:"
+                android:layout_marginTop="10dp"
+                />
+            <com.llollox.androidprojects.compoundbuttongroup.CompoundButtonGroup
+                android:id="@+id/categories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:entries="@array/category"
+                app:compoundType="radio"
+                app:numCols="4"
+                app:labelOrder="after"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="To Edit:"
+                    />
+                <com.llollox.androidprojects.compoundbuttongroup.CompoundButtonGroup
+                    android:id="@+id/toEdit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:entries="@array/toEdit"
+                    app:compoundType="radio"
+                    app:numCols="3"
+                    app:labelOrder="after"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <Button
+                    android:id="@+id/prev"
+                    android:layout_width="match_parent" android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Previous"
+                    android:singleLine="true"
+                    android:layout_margin="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/common_blue_bg"
+                    />
+                <Button
+                    android:id="@+id/next"
+                    android:layout_width="match_parent" android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Next"
+                    android:singleLine="true"
+                    android:layout_margin="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/common_blue_bg"
+                    />
+                <Button
+                    android:id="@+id/save"
+                    android:layout_width="match_parent" android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Save"
+                    android:singleLine="true"
+                    android:layout_margin="15dp"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/common_blue_bg"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

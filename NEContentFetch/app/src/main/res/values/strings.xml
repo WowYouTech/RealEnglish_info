@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">NativeEnglishTool</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="level_sort">
+        <item>Normal</item>
+        <item>Hard</item>
+        <item>DUMP</item>
+    </string-array>
+
+    <string-array name="level">
+        <item>Clear_Simple</item>
+        <item>Clear_Complex</item>
+        <item>UnClear_Simple</item>
+        <item>UnClear_Complex</item>
+        <item>DISCARD</item>
+    </string-array>
+
+    <string-array name="category">
+        <item>Info</item>
+        <item>Show</item>
+        <item>Fun</item>
+        <item>Temp</item>
+        <item>Real</item>
+    </string-array>
+
+    <string-array name="toEdit">
+        <item>No</item>
+        <item>Edit</item>
+    </string-array>
+
+
+</resources>

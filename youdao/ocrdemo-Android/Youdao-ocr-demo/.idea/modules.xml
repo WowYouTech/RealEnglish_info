@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Youdao-ocr-demo.iml" filepath="$PROJECT_DIR$/Youdao-ocr-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yd-app-sdk/yd-app-sdk.iml" filepath="$PROJECT_DIR$/yd-app-sdk/yd-app-sdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yd-ch-dict-offline/yd-ch-dict-offline.iml" filepath="$PROJECT_DIR$/yd-ch-dict-offline/yd-ch-dict-offline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yd-ocr-demo/yd-ocr-demo.iml" filepath="$PROJECT_DIR$/yd-ocr-demo/yd-ocr-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yd-ocr-online/yd-ocr-online.iml" filepath="$PROJECT_DIR$/yd-ocr-online/yd-ocr-online.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yd-translate-offline/yd-translate-offline.iml" filepath="$PROJECT_DIR$/yd-translate-offline/yd-translate-offline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yd-translate-online/yd-translate-online.iml" filepath="$PROJECT_DIR$/yd-translate-online/yd-translate-online.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yd-voicerecognize-demo/yd-voicerecognize-demo.iml" filepath="$PROJECT_DIR$/yd-voicerecognize-demo/yd-voicerecognize-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yd-voicerecognize-online/yd-voicerecognize-online.iml" filepath="$PROJECT_DIR$/yd-voicerecognize-online/yd-voicerecognize-online.iml" />
+    </modules>
+  </component>
+</project>

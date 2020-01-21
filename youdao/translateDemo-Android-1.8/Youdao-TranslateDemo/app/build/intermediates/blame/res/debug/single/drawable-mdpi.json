@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_launcher.png",
+        "source": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/app/src/main/res/drawable-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\test\\translateDemo-Android-1.8\\Youdao-TranslateDemo\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\test\\translateDemo-Android-1.8\\Youdao-TranslateDemo\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\workdir\\traslateSdk\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi\\ic_launcher.png",
+        "source": "/Users/steveyang/Downloads/translateDemo-Android-1.8/Youdao-TranslateDemo/D:\\workdir\\traslateSdk\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    }
+]
