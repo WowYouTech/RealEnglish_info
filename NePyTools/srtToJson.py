@@ -1,27 +1,31 @@
 #coding=utf-8
 import io
-import srt
-import json
+
+import srt_yy
 import jsonpickle
+import os
+import os.path
+import shutil
 
-from srtMoveResultsWithSub import mkdir, mymovefile
+def mymovefile(srcfile,dstfile):
+    if not os.path.isfile(srcfile):
+        print("%s not exist!"%(srcfile))
+    else:
+        fpath,fname=os.path.split(dstfile)    #分离文件名和路径
+        if not os.path.exists(fpath):
+            os.makedirs(fpath)                #创建路径
+        shutil.move(srcfile,dstfile)          #移动文件
+        print("move %s -> %s"%( srcfile,dstfile))
 
-# pjtPath = '/Users/steveyang/Data_NE_Mobile/Content/autosub_to_process_easy/'
-# pjtPath = '/Users/steveyang/Downloads/asr/'
-
-contentPath = '/Users/steveyang/Data_NE_720p'
-
-# def renameSrts(parentPath):
-# 	for filename in os.listdir(parentPath):
-# 		if os.path.isdir(parentPath + filename):
-# 			renameSrts(parentPath+filename+'/')
-#
-# 		elif filename.endswith('.en.srt'):
-# 			target = filename.replace('.en.srt', '.srt')
-# 			if os.path.isfile(parentPath + filename):
-# 				os.rename(parentPath + filename, parentPath + target)
-#
-# renameSrts(contentPath)
+def copyfile(srcfile,dstfile):
+    if not os.path.isfile(srcfile):
+        print("%s not exist!"%(srcfile))
+    else:
+        fpath,fname=os.path.split(dstfile)
+        if not os.path.exists(fpath):
+            os.makedirs(fpath)
+        shutil.copyfile(srcfile,dstfile)
+        print("copy %s -> %s"%( srcfile,dstfile))
 
 class SubItem(object):
 
@@ -35,14 +39,58 @@ class SubItem(object):
 def parseSrt(path):
     f = io.open(path, "r+")
     s = f.read()
-    subs = list(srt.parse(s))
-    # print(subs)
+    subs = list(srt_yy.parse(s))
+
     subJson = jsonpickle.encode(subs, unpicklable=False)
-    print(subJson)
+    f.close()
+    return subJson
+
+def convertSrtFolder(path):
+    for filename in os.listdir(path):
+        if filename.endswith('.srt'):
+            outFileName = filename.replace('.srt','.txt')
+            subJson = parseSrt(path+filename)
+            ss = str(subJson)
+            print(ss)
+            with open(path+outFileName, 'w+') as outfile:
+                outfile.write(ss)
 
 
-srtPath = "/Users/steveyang/Data_NE_720p/Content/autosub_Sub_Done_easy/33.srt"
-parseSrt(srtPath)
+def moveToAppFolder(path, outPath):
+    for filename in os.listdir(path):
+        if filename.endswith('.mp4'):
+            print(filename)
+            videoFile = filename
+            thum = filename.replace('.mp4', '.jpg')
+            subJson = filename.replace('.mp4', '.txt')
+            infoJson = filename.replace('.mp4', '_info.txt')
+            print(thum)
+            print(subJson)
+
+            exists = os.path.isfile(subJson)
+            if exists:
+                print("sub exist")
+            else:
+                print("sub not exist")
+                copyfile(path+filename, outPath + videoFile)
+                copyfile(path+thum, outPath + thum)
+                copyfile(path+subJson, outPath + subJson)
+                copyfile(path + subJson, outPath + infoJson)
+
+
+# srtPath = "/Users/steveyang/Data_NE_720p/Content/autosub_Sub_Done_easy/33.srt"
+# parseSrt(srtPath)
+
+# originPath = "/Users/steveyang/EnglishAppProject/EnglishAppContent/Data_NE_720p/Content/srt_sub_done/"
+# originPath = "/Users/steveyang/EnglishAppProject/ne_android_dev/appRealEnglish/src/main/assets/contents/"
+originPath = "/Users/steveyang/EnglishAppProject/SnapVideos/wave_2/"
+assetPath = "/Users/steveyang/EnglishAppProject/RealEnglish/appRealEnglish/src/debug/assets/contents/"
+
+
+# convertSrtFolder(originPath)
+
+moveToAppFolder(originPath, assetPath)
+
 
 
 

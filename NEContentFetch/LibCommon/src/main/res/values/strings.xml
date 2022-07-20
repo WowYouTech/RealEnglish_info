@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LibCommon</string>
+
+    <string name="all">All</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Proceed</string>
+    <string name="retry">Retry</string>
+    <string name="ignore">Ignore</string>
+    <string name="skip">Skip</string>
+    <string name="loading">Loading...</string>
+    <string name="saving">Saving...</string>
+    <string name="deleting">Deleting...</string>
+    <string name="cancel">Cancel</string>
+    <string name="options">Options</string>
+    <string name="search">Search</string>
+    <string name="error">Error</string>
+    <string name="success">Success</string>
+    <string name="done">Done</string>
+</resources>

@@ -1,12 +1,12 @@
 package com.nativeenglish.tool;
 
 import android.content.Intent;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.viewpager.widget.ViewPager;
 
 import com.nativeenglish.tool.models.ContentList;
 import com.nativeenglish.tool.models.ContentToSort;
@@ -20,8 +20,7 @@ import cn.bmob.v3.listener.FindListener;
 
 public class MainActivity extends NEBaseActivity {
 
-    private TabLayout tabLayout = null;
-    private ViewPager viewPager = null;
+
 
     Button toolButton1,toolButton2, toolButton3, toolButtonPreProcess;
     static int TypeSize = 2;
@@ -37,10 +36,10 @@ public class MainActivity extends NEBaseActivity {
         setContentView(R.layout.activity_main);
         initTabs();
 
-        toolButton1 = findViewById(R.id.toolButton1);
-        toolButton2 = findViewById(R.id.toolButton2);
-        toolButton3 = findViewById(R.id.toolButton3);
-        toolButtonPreProcess = findViewById(R.id.toolButtonPreProcess);
+        toolButton1 = (Button) findViewById(R.id.toolButton1);
+        toolButton2 = (Button) findViewById(R.id.toolButton2);
+        toolButton3 = (Button) findViewById(R.id.toolButton3);
+        toolButtonPreProcess = (Button) findViewById(R.id.toolButtonPreProcess);
 
         toolButtonPreProcess.setOnClickListener(new View.OnClickListener() {
             @Override

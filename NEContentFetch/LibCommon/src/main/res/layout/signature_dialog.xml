@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#F0F5F5"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:isScrollContainer="false">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:isScrollContainer="false">
+
+        <com.yy.libcommon.Font.AMTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please sign below"
+            android:padding="10dp"
+            android:id="@+id/textView"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/text_black" />
+
+        <com.yy.libcommon.DrawingView
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_gray_frame_fill_white"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/signature_dialog_drawingView"
+            android:isScrollContainer="false"
+            android:layout_weight="1"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            >
+
+            <com.yy.libcommon.Font.AMButton
+                style="@android:style/Widget.Button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Cancel"
+                android:id="@+id/signature_dialog_cancelButton"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="false"
+                />
+
+            <com.yy.libcommon.Font.AMButton
+                style="@android:style/Widget.Button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Clear"
+                android:id="@+id/signature_dialog_clearButton"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:layout_marginRight="20dp"
+                android:textAllCaps="false"
+                />
+
+            <com.yy.libcommon.Font.AMButton
+                style="@android:style/Widget.Button"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Save"
+                android:id="@+id/signature_dialog_saveButton"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

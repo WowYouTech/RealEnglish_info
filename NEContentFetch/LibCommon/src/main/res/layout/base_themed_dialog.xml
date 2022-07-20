@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/base_themed_dialog_baseLinearLayout">
+
+    <FrameLayout
+        android:id="@+id/base_themed_dialog_titleView"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/dialog_title_background"
+        >
+
+
+        <com.yy.libcommon.Font.AMTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="New Text"
+            android:id="@+id/base_themed_dialog_titleTextView"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:singleLine="true"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+        <com.yy.libcommon.Font.AMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/base_themed_dialog_left_text_view"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_gravity="left|center_vertical"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:visibility="gone"
+            />
+
+        <com.yy.libcommon.Font.AMTextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/base_themed_dialog_right_text_view"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_gravity="right|center_vertical"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:visibility="gone"
+            />
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/base_themed_dialog_mainRelativeLayout">
+
+    </RelativeLayout>
+
+</LinearLayout>

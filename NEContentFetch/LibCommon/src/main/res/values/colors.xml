@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#28B8B7</color>
+
+
+    <color name="text_black">#000000</color>
+    <color name="text_dark">#505050</color>
+    <color name="text_grey">#777777</color>
+    <color name="text_light">#aaaaaa</color>
+    <color name="text_disabled_dark">#888888</color>
+    <color name="text_disabled">#dddddd</color>
+
+
+    <color name="default_list_divider">#e0e0e0</color>
+    <color name="light_list_divider">#f8f8f8</color>
+
+</resources>

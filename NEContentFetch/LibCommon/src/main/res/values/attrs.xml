@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ToggleImageButton">
+        <attr name="android:checked" />
+        <attr name="checkedBackground" format="integer"/>
+        <attr name="uncheckedBackground" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="AMTextView">
+        <attr name="ttf_type" format="string"/>
+    </declare-styleable>
+
+</resources>

@@ -3,7 +3,18 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NEContentFetch.iml" filepath="$PROJECT_DIR$/NEContentFetch.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LibPercentProgress/NEContentFetch.LibPercentProgress.iml" filepath="$PROJECT_DIR$/.idea/modules/LibPercentProgress/NEContentFetch.LibPercentProgress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LibPercentProgress/NEContentFetch.LibPercentProgress.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/LibPercentProgress/NEContentFetch.LibPercentProgress.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LibPercentProgress/NEContentFetch.LibPercentProgress.main.iml" filepath="$PROJECT_DIR$/.idea/modules/LibPercentProgress/NEContentFetch.LibPercentProgress.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/LibPercentProgress/NEContentFetch.LibPercentProgress.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/LibPercentProgress/NEContentFetch.LibPercentProgress.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NEContentFetch.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NEContentFetch.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NEContentFetch.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NEContentFetch.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NEContentFetch.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NEContentFetch.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/NEContentFetch.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/NEContentFetch.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libCommon/NEContentFetch.libCommon.iml" filepath="$PROJECT_DIR$/.idea/modules/libCommon/NEContentFetch.libCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libCommon/NEContentFetch.libCommon.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libCommon/NEContentFetch.libCommon.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libCommon/NEContentFetch.libCommon.main.iml" filepath="$PROJECT_DIR$/.idea/modules/libCommon/NEContentFetch.libCommon.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libCommon/NEContentFetch.libCommon.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/libCommon/NEContentFetch.libCommon.unitTest.iml" />
     </modules>
   </component>
 </project>

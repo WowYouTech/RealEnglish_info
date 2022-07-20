@@ -1,10 +1,5 @@
 #coding=utf-8
-import os
 import io
-import fnmatch
-
-
-from srtMoveResultsWithSub import mkdir, mymovefile
 
 # pjtPath = '/Users/steveyang/Data_NE_Mobile/Content/autosub_to_process_easy/'
 # pjtPath = '/Users/steveyang/Downloads/asr/'

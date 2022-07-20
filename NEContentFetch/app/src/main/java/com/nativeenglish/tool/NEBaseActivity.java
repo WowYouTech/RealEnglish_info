@@ -4,10 +4,11 @@ package com.nativeenglish.tool;
 import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class NEBaseActivity extends AppCompatActivity {
     protected ProgressDialog progressDialog;

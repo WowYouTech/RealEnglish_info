@@ -36,10 +36,11 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.annotation.NonNull;
 
 import java.io.IOException;
 import java.time.Duration;
@@ -97,8 +98,8 @@ public class FetchActivity extends NEBaseActivity implements EasyPermissions.Per
 
         initYtbService();
 
-        toolButton1 = findViewById(R.id.toolButton1);
-        toolButton2 = findViewById(R.id.toolButton2);
+        toolButton1 = (Button) findViewById(R.id.toolButton1);
+        toolButton2 = (Button) findViewById(R.id.toolButton2);
         toolButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

@@ -11,10 +11,11 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.annotation.NonNull;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
@@ -79,7 +80,7 @@ public class PreProcessActivity extends NEBaseActivity implements EasyPermission
 
         initYtbService();
 
-        toolButton1 = findViewById(R.id.toolButton1);
+        toolButton1 = (Button) findViewById(R.id.toolButton1);
         toolButton1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,7 +89,7 @@ public class PreProcessActivity extends NEBaseActivity implements EasyPermission
             }
         });
 
-        toolButton2 = findViewById(R.id.toolButton2);
+        toolButton2 = (Button) findViewById(R.id.toolButton2);
         toolButton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

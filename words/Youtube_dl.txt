@@ -1,0 +1,9 @@
+youtube-dl --write-sub --sub-format srt https://www.youtube.com/watch?v=zwUBpwva2xo
+youtube-dl --write-auto-sub --sub-format srt https://www.youtube.com/watch?v=zwUBpwva2xo
+youtube-dl -f 135 --write-auto-sub  https://www.youtube.com/watch?v=zwUBpwva2xo
+youtube-dl -f 135 --write-sub  https://www.youtube.com/watch?v=zwUBpwva2xo
+
+
+youtube-dl -f 135 --write-thumbnail --write-auto-sub -a auto.txt
+
+youtube-dl -f 135 --write-thumbnail --write-sub  -a srt.txt
