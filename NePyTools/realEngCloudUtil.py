@@ -1,5 +1,7 @@
 #coding=utf-8
 import io
+
+import realEngUtils
 import srt_yy
 import jsonpickle
 import os
@@ -15,11 +17,13 @@ import simplejson as json
 
 data_list = []
 colIndexList = [1, 9, 17, 18]
-colList = ['title', 'coverUrl','contentUrl','duration']
+colList = ['vid', 'coverUrl','contentUrl','duration']
+
+
 def parseHuaweiCloudXlsx(path, fileName):
     xlsxFileName = fileName + '.xlsx'
     inputFilePath = path + xlsxFileName
-    outFilePath = path + fileName + '_cloud.txt'
+    outFilePath = path + fileName + realEngUtils.cloudInfoTail
 
     df = pd.read_excel(inputFilePath)
     for index, row in df.iterrows():
@@ -29,6 +33,10 @@ def parseHuaweiCloudXlsx(path, fileName):
             vv = row_values[colIndexList[colNum]]
             ss = str(vv)
             cc = colList[colNum]
+            if cc == 'vid':
+                dd = ss.split('=')
+                ss = dd[0]
+
             if cc == 'duration':
                 dd = ss.split(':')
                 ss = dd[1] + ':' + dd[2]
@@ -43,8 +51,11 @@ def parseHuaweiCloudXlsx(path, fileName):
     with open(outFilePath, 'w+') as f:
         f.write(j)
 
-originPath = "/Users/steveyang/EnglishAppProject/SnapVideos/wave_2/"
-groupname = 'wave_2'
-parseHuaweiCloudXlsx(originPath,groupname)
+
+#test
+# originPath = "/Users/steveyang/EnglishAppProject/SnapVideos/wave_2/"
+# groupname = 'wave_2'
+
+# parseHuaweiCloudXlsx(originPath,groupname)
 
 

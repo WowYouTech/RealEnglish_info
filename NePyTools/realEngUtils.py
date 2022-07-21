@@ -1,11 +1,9 @@
 #coding=utf-8
+import os
 from collections import OrderedDict
 import simplejson as json
 import RealEngGroupInfo
-
-##Generate group info json file & Generate words json files
-
-
+import io
 
 
 wordEmptyStr = ';;'
@@ -58,7 +56,7 @@ def parseWords(wordLine) -> str:
     return jj
 
 
-def parseGroupFile(folderPath, filePath, outFilePath):
+def parseGroupInfoToJson(folderPath, filePath, outFilePath):
     data_list = []
     with open(filePath) as f:
         lines = f.readlines()
@@ -87,6 +85,16 @@ def parseGroupFile(folderPath, filePath, outFilePath):
             i += 1
         elif strLine.startswith(RealEngGroupInfo.tagHead):
             data['tag'] = strLine.replace(RealEngGroupInfo.tagHead, '').strip()
+            i += 1
+        elif strLine.startswith(RealEngGroupInfo.campHead):
+            data['lessonCamp'] = strLine.replace(RealEngGroupInfo.campHead, '').strip()
+            i += 1
+        elif strLine.startswith(RealEngGroupInfo.indexInCampHead):
+            ss = strLine.replace(RealEngGroupInfo.indexInCampHead, '').strip()
+            if len(ss) == 0:
+                data['indexInCamp'] = 0
+            else:
+                data['indexInCamp'] = int(ss)
             i += 1
         elif strLine.startswith(RealEngGroupInfo.wordListStart):
             i += 1
@@ -122,18 +130,77 @@ def parseGroupFile(folderPath, filePath, outFilePath):
         f.write(j)
 
 
-groupName = 'wave_2'
-originPath = '/Users/steveyang/EnglishAppProject/SnapVideos/'+groupName+'/'
-filePath = originPath + groupName + '_info.txt'
-outPath = originPath + groupName + '_info_json.txt'
 
+cloudKeyList = ['vid', 'coverUrl','contentUrl','duration']
+infoKeyList = ['vid', 'type', 'title', 'channel', 'tag', 'wordItemStr']
+keyVid = 'vid'
+keySubStr = 'subStr'
+cloudInfoTail='_cloud.txt'
+infoJsonTail='_info_json.txt'
+infoFileTail='_info.txt'
+lessonsJsonTail='_lessons.txt'
 
-from moveFilesToApp import moveToAppFolder
+lessonDefaultType='snap_video'
+lessonDefaultChannel='funny'
+lessonDefaultCamp='hot'
 
-assetPath = "/Users/steveyang/EnglishAppProject/RealEnglish/appRealEnglish/src/debug/assets/contents/"
+def generateLessons(path, groupIndex, name) -> []:
+    cloudInfoFile = path + name + cloudInfoTail
+    groupInfoFile = path + name + infoJsonTail
+    outFilePath = path + name + lessonsJsonTail
 
-parseGroupFile(originPath, filePath,outPath)
-moveToAppFolder(originPath, assetPath)
+    f = io.open(cloudInfoFile, "r+")
+    s = f.read()
+    cloudInfoJsonList = json.loads(s)
+
+    f = io.open(groupInfoFile, "r+")
+    s = f.read()
+    groupInfoJsonList = json.loads(s)
+
+    dataList = []
+
+    itemsDict = OrderedDict()
+    srtDicts = OrderedDict()
+
+    splitStr = '='
+    for filename in os.listdir(path):
+        if filename.endswith('.mp4') and filename.__contains__(splitStr):
+            srtFileName = filename.replace('.mp4','.txt')
+            srtPath = path + srtFileName
+
+            f = io.open(srtPath, "r+")
+            subStr = f.read()
+
+            srtDict = OrderedDict()
+            srtDict[keySubStr]=subStr
+            vid = srtFileName.split(splitStr)[0]
+            srtDicts[vid] = srtDict
+
+    for ci in cloudInfoJsonList:
+        vid = ci[keyVid]
+        itemsDict[vid] = ci
+    for gi in groupInfoJsonList:
+        vid = gi[keyVid]
+        mm = {**gi, **itemsDict[vid], **srtDicts[vid]}
+        mm['groupIndex']=groupIndex
+        dataList.append(mm)
+
+    ss = json.dumps(dataList)
+
+    with open(outFilePath, 'w+') as f:
+        f.write(ss)
+
+    return dataList
+
+# groupName = 'wave_2'
+# originPath = '/Users/steveyang/EnglishAppProject/SnapVideos/'+groupName+'/'
+# filePath = originPath + groupName + '_info_e.txt'
+# outPath = originPath + groupName + '_info_json.txt'
+# assetPath = "/Users/steveyang/EnglishAppProject/RealEnglish/appRealEnglish/src/debug/assets/contents/"
+
+# parseGroupInfoToJson(originPath, filePath,outPath)
+# moveToAppFolder(originPath, assetPath)
+
 
 
 

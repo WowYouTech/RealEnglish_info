@@ -1,32 +1,12 @@
 #coding=utf-8
 import io
 
+import realEngUtils
 import srt_yy
 import jsonpickle
 import os
 import os.path
-import shutil
-
-def mymovefile(srcfile,dstfile):
-    if not os.path.isfile(srcfile):
-        print("%s not exist!"%(srcfile))
-    else:
-        fpath,fname=os.path.split(dstfile)    #分离文件名和路径
-        if not os.path.exists(fpath):
-            os.makedirs(fpath)                #创建路径
-        shutil.move(srcfile,dstfile)          #移动文件
-        print("move %s -> %s"%( srcfile,dstfile))
-
-def copyfile(srcfile,dstfile):
-    if not os.path.isfile(srcfile):
-        print("%s not exist!"%(srcfile))
-    else:
-        fpath,fname=os.path.split(dstfile)
-        if not os.path.exists(fpath):
-            os.makedirs(fpath)
-        shutil.copyfile(srcfile,dstfile)
-        print("copy %s -> %s"%( srcfile,dstfile))
-
+from commonUtils import copyfile
 
 
 def moveToAppFolder(path, outPath):
@@ -36,7 +16,7 @@ def moveToAppFolder(path, outPath):
             videoFile = filename
             thum = filename.replace('.mp4', '.jpg')
             subJson = filename.replace('.mp4', '.txt')
-            infoJson = filename.replace('.mp4', '_info.txt')
+            infoJson = filename.replace('.mp4', realEngUtils.infoJsonTail)
             print(thum)
             print(subJson)
 
@@ -50,11 +30,9 @@ def moveToAppFolder(path, outPath):
                 copyfile(path+subJson, outPath + subJson)
                 copyfile(path + infoJson, outPath + infoJson)
 
-
-originPath = "/Users/steveyang/EnglishAppProject/SnapVideos/wave_2/"
-assetPath = "/Users/steveyang/EnglishAppProject/RealEnglish/appRealEnglish/src/debug/assets/contents/"
-
-moveToAppFolder(originPath, assetPath)
+# originPath = "/Users/steveyang/EnglishAppProject/SnapVideos/wave_2/"
+# assetPath = "/Users/steveyang/EnglishAppProject/RealEnglish/appRealEnglish/src/debug/assets/contents/"
+# moveToAppFolder(originPath, assetPath)
 
 
 
