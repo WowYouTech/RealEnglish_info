@@ -10,22 +10,30 @@ import shutil
 import xlrd
 import openpyxl
 import pandas as pd
-
+import lxml
 
 from collections import OrderedDict
 import simplejson as json
 
 data_list = []
-colIndexList = [1, 9, 17, 18]
-colList = ['vid', 'coverUrl','contentUrl','duration']
+colIndexList = [1, 9, 17]#, 18]
+colList = ['vid', 'coverUrl','contentUrl']#,'duration']
 
 
 def parseHuaweiCloudXlsx(path, fileName):
+    xlsFileName = fileName + '.xls'
     xlsxFileName = fileName + '.xlsx'
-    inputFilePath = path + xlsxFileName
+    htmFile = fileName + '.htm'
+
+    # inputFilePath = path + xlsxFileName
+    inputFilePath = path + htmFile
+
     outFilePath = path + fileName + realEngUtils.cloudInfoTail
 
-    df = pd.read_excel(inputFilePath)
+    # df = pd.read_excel(inputFilePath)
+    list = pd.read_html(inputFilePath)
+
+    df = list[0]
     for index, row in df.iterrows():
         data = OrderedDict()
         row_values = row.values
@@ -37,9 +45,9 @@ def parseHuaweiCloudXlsx(path, fileName):
                 dd = ss.split('=')
                 ss = dd[0]
 
-            if cc == 'duration':
-                dd = ss.split(':')
-                ss = dd[1] + ':' + dd[2]
+            # if cc == 'duration':
+            #     dd = ss.split(':')
+            #     ss = dd[1] + ':' + dd[2]
 
             data[cc] = ss
         data_list.append(data)
@@ -55,7 +63,6 @@ def parseHuaweiCloudXlsx(path, fileName):
 #test
 # originPath = "/Users/steveyang/EnglishAppProject/SnapVideos/wave_2/"
 # groupname = 'wave_2'
-
 # parseHuaweiCloudXlsx(originPath,groupname)
 
 

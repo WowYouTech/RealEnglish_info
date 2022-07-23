@@ -4,7 +4,7 @@ from realEngCloudUtil import parseHuaweiCloudXlsx
 from realEngUtils import parseGroupInfoToJson, generateLessons
 from srtToJson import convertSrtToJson
 
-groupIndex = 2
+groupIndex = 1
 groupName = 'wave_' + str(groupIndex)
 originPath = '/Users/steveyang/EnglishAppProject/SnapVideos/'+groupName+'/'
 infoFilePath = originPath + groupName + '_info_e.txt'
@@ -12,10 +12,10 @@ infoOutPath = originPath + groupName + '_info_json.txt'
 assetPath = "/Users/steveyang/EnglishAppProject/RealEnglish/appRealEnglish/src/debug/assets/contents/"
 
 #####lesson urls and duration
-# parseHuaweiCloudXlsx(originPath, groupName)
+parseHuaweiCloudXlsx(originPath, groupName)
 
 #####lesson srt
-# convertSrtToJson(originPath)
+convertSrtToJson(originPath)
 
 ##lesson info and words
 parseGroupInfoToJson(originPath, infoFilePath, infoOutPath)

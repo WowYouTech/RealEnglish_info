@@ -1,5 +1,10 @@
 #coding=utf-8
 import io
+from commonUtils import copyfile
+from realEngCloudUtil import parseHuaweiCloudXlsx
+from realEngUtils import parseGroupInfoToJson, generateLessons
+from srtToJson import convertSrtToJson
+
 
 # pjtPath = '/Users/steveyang/Data_NE_Mobile/Content/autosub_to_process_easy/'
 # pjtPath = '/Users/steveyang/Downloads/asr/'
@@ -59,52 +64,13 @@ contentPath = '/Users/steveyang/Data_NE_720p'
 # findReplace(contentPath, "’", "'", "*.srt")
 
 
-path = '/Users/steveyang/NativeEnglish/'
-w1 = "words_10k_houge.txt"
-whard = "words_hard_10k.txt"
-fhard = io.open(path+whard, "r")
 
-def existInList(listItems:list, word:str)->bool:
-    for line in listItems:
-        if line.lower() == word.lower():
-            return True
-    return False
+groupIndex = 2
+groupName = 'wave_' + str(groupIndex)
+originPath = '/Users/steveyang/EnglishAppProject/SnapVideos/'
+infoFilePath = originPath + 'test_group_info.txt' #'_info_e.txt'
+infoOutPath = originPath + 'test_group_info_json.txt'
 
-
-fwords = io.open(path + w1, "r")
-words = fwords.readlines()
-
-fHardNotInHouge = io.open(path + "HardNotInHouge.txt", "w+")
-lines = fhard.readlines()
-for item in lines:
-    if not existInList(words, item):
-        fHardNotInHouge.write(item)
-fHardNotInHouge.close()
-
-# fleft = io.open(path + "output_left.txt", "w+")
-# fhard = io.open(path + "output_hard.txt", "w+")
-# lines = fhard.readlines()
-# for wordItem in words:
-#     if existInList(lines, wordItem):
-#         fhard.write(wordItem)
-#     else:
-#         fleft.write(wordItem)
-# fleft.close()
-# fhard.close()
-
-# fOldList = io.open(path + "words_10k.txt")
-# oldList = fOldList.readlines()
-# def existInList(oldList, word:str)->bool:
-#     for line in oldList:
-#         if line.lower() == word.lower():
-#             return True
-#     return False
-#
-# fleft = io.open(path + "output_left.txt", "r")
-# fleftFiltered = io.open(path + "output_left_filtered.txt", "w+")
-# leftList = fleft.readlines()
-# for item in leftList:
-#     if not existInList(oldList, item):
-#         fleftFiltered.write(item)
-# fleftFiltered.close()
+##lesson info and words
+parseGroupInfoToJson(originPath, infoFilePath, infoOutPath)
 

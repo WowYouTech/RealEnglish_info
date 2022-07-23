@@ -1,78 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c7e67ccb-5435-4fd2-94f4-4b9aea736827" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="c7e67ccb-5435-4fd2-94f4-4b9aea736827" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/Changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/Google2SRT.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/Google2SRT.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/Google2SRT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/LICENSE-Apache_Commons_IO.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/LICENSE-JDOM.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/LICENSE-WinRun4J.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/LICENSE.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/README.TXT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/ca/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/en/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/es/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/batch.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/ca.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/es.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/it.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/jar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/pt-br.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/screenshot1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/screenshot1_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/screenshot2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/screenshot2_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/sh.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/ss_URL_list_tracks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/ss_URL_list_tracks_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/ss_single_URL_tracks.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/ss_single_URL_tracks_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/ss_single_URL_translations.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/ss_single_URL_translations_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/ss_single_XML_file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/img/ss_single_XML_file_s.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/it/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/pt-br/help.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/doc/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/lib/commons-io-2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/lib/jdom.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/run.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/run.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle_ca.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle_de.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle_es.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle_fr.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle_it.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle_pl.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle_pt_BR.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle_ru.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle_uk.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle_zh_HanS.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Bundle_zh_HanT.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Common.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Converter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/GUI.form" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/GUI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/NetSubtitle.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/SRTFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Settings.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/SupportedFileTypesFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/TXTFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/TableModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/Video.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/XMLFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/about.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/ca.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/de.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/en.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/es.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/fr.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/help.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/it.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/pl.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/pt_BR.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/ru.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/uk.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/zh_HanS.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Google2SRT-0.7.7/src/zh_HanT.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../NePyTools/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../NePyTools/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/autosub-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/autosub-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autosub/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/autosub/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/autosub/subAll.py" beforeDir="false" afterPath="$PROJECT_DIR$/autosub/subAll.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/.idea/caches/gradle_models.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/bmobsms.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/release/app-release.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/release/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/androidTest/java/cn/bmob/sms/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/CollectionList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/DayBillBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/activity/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/activity/NormalActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/activity/user/UserBindActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/activity/user/UserLoginPasswordActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/activity/user/UserLoginSmsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/activity/user/UserMainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/activity/user/UserResetPasswordActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/activity/user/UserResetSmsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/activity/user/UserSignUpOrLoginSmsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/activity/user/UserSignUpPasswordActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/activity/user/UserSignUpPasswordAndSmsActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/activity/user/UserUnBindActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/java/cn/bmob/sms/bean/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/layout/activity_normal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/layout/activity_user_bind.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/layout/activity_user_login_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/layout/activity_user_login_sms.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/layout/activity_user_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/layout/activity_user_reset_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/layout/activity_user_reset_sms.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/layout/activity_user_signup_or_login_sms.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/layout/activity_user_signup_password.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/layout/activity_user_signup_password_and_sms.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/layout/activity_user_unbind.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/app/src/test/java/cn/bmob/sms/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bmob_android_demo_sms-master/SMS/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../realEngJsFiles/Untitled-1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../realEngJsFiles/uploadLessons.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autosub/formatters.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/setup.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autosub/constants.py">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autosub/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-              <folding>
-                <element signature="e#70#142#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/autosub/subAll.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/autosub/__init__.spec">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/argparse.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24210">
-              <caret line="1618" column="8" selection-start-line="1618" selection-start-column="8" selection-end-line="1618" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,6 +189,9 @@
       <find>DEFAULT_CONCURRENCY</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -101,6 +205,8 @@
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
+  <component name="ProjectId" id="2CFjEcw4jX6Vj4gcw0KPTwkj68W" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -125,20 +231,13 @@
       <pane id="Scope" />
     </panes>
   </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager" selected="Python.subAll">
     <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true">
@@ -212,6 +311,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -246,6 +346,17 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/autosub/formatters.py">

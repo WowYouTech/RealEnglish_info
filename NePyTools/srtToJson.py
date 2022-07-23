@@ -34,7 +34,7 @@ def convertSrtToJson(path):
             with open(path+outFileName, 'w+') as outfile:
                 outfile.write(ss)
 
-# originPath = "/Users/steveyang/EnglishAppProject/SnapVideos/wave_2/"
+# originPath = "/Users/steveyang/EnglishAppProject/SnapVideos/wave_1/"
 # assetPath = "/Users/steveyang/EnglishAppProject/RealEnglish/appRealEnglish/src/debug/assets/contents/"
 # convertSrtToJson(originPath)
 

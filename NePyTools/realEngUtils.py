@@ -4,16 +4,89 @@ from collections import OrderedDict
 import simplejson as json
 import RealEngGroupInfo
 import io
+from collections import OrderedDict
+from videpProcessUtil import *
+
+import realEngUtils
+import srt_yy
+import jsonpickle
+import os
+import os.path
+import shutil
+import RealEngGroupInfo
 
 
 wordEmptyStr = ';;'
 chineseCode='zh-CN'
 englishCode='en'
 contextHead='??'
-splitStr='!!!!'
+wordItemSplitStr='!!!!'
+
+
+def generateGroupInfoFile(path, groupname):
+    wordsFile = groupname +realEngUtils.infoFileTail;
+    fa = []
+    cc = ''
+    nameList = []
+    for filename in os.listdir(path):
+        if filename.endswith('.mp4'):
+            nameList.append(filename)
+
+    indexDict = OrderedDict()
+    indexList = []
+    for filename in nameList:
+        tt = filename.split("=")
+        vid = tt[0]
+        vv = vid.split('_')
+        v1=int(vv[2])
+        indexList.append(v1)
+        indexDict[v1]=filename
+    indexList.sort(reverse=False)
+
+    for index in indexList:
+        filename = indexDict[index]
+        duration = getDurationOfVideo(path + filename)
+        dd = int(duration)
+        mm = int(dd / 60)
+        ss = int(dd % 60)
+        ds ="{:02}:{:02}".format(mm, ss)
+
+        tt = filename.split("=")
+        vid = tt[0]
+        fileTitle = tt[1].replace('.mp4', '')
+        contentStr=''
+        for lineKey in RealEngGroupInfo.lessonEditElementList:
+            if lineKey == RealEngGroupInfo.vid:
+                lineStr = '\n' + lineKey + RealEngGroupInfo.splitStr  + vid
+            elif lineKey == RealEngGroupInfo.title:
+                lineStr = '\n' + lineKey + RealEngGroupInfo.splitStr  + fileTitle
+            elif lineKey == RealEngGroupInfo.type:
+                lineStr = '\n' + lineKey + RealEngGroupInfo.splitStr  + realEngUtils.lessonDefaultType
+            elif lineKey == RealEngGroupInfo.channel:
+                lineStr = '\n' + lineKey + RealEngGroupInfo.splitStr  + realEngUtils.lessonDefaultChannel
+            elif lineKey == RealEngGroupInfo.lessonCamp:
+                lineStr = '\n' + lineKey + RealEngGroupInfo.splitStr  + realEngUtils.lessonDefaultCamp
+            elif lineKey == RealEngGroupInfo.indexInCamp:
+                lineStr = '\n' + lineKey + RealEngGroupInfo.splitStr  + str(0)
+            elif lineKey == RealEngGroupInfo.duration:
+                lineStr = '\n' + lineKey + RealEngGroupInfo.splitStr  + ds
+            else:
+                lineStr = '\n' + lineKey + RealEngGroupInfo.splitStr
+
+            contentStr += lineStr
+
+        ww = '\n' + RealEngGroupInfo.wordListStart + '\n\n\n' + RealEngGroupInfo.wordListEnd
+        contentStr += ww
+        fa.append(contentStr)
+
+    for aa in fa:
+        cc = cc + '\n' + aa + '\n\n\n\n\n'
+    with open(path+wordsFile, 'w+') as outfile:
+        outfile.write(cc)
+
 
 def parseWords(wordLine) -> str:
-    sa = wordLine.split(splitStr)
+    sa = wordLine.split(wordItemSplitStr)
     wordList=[]
     for ss in sa:
         word = OrderedDict()
@@ -65,62 +138,69 @@ def parseGroupInfoToJson(folderPath, filePath, outFilePath):
 
     while i < len(lines):
         strLine = lines[i].strip()
+        if len(strLine) == 0:
+            i += 1
+            continue
 
-        if strLine.startswith(RealEngGroupInfo.vidHead):
-            data = OrderedDict()
-            data['vid'] = strLine.replace(RealEngGroupInfo.vidHead, '').strip()
+        heads = strLine.split(RealEngGroupInfo.splitStr)
+        if len(heads) == 0:
+            i += 1
+            continue
+        lineKey = heads[0].strip()
+        if len(lineKey) == 0:
+            i += 1
+            continue
 
-            if len(data['vid']) > 0:
-                data_list.append(data)
-
+        if lineKey == (RealEngGroupInfo.wordListStart):
             i += 1
-        elif strLine.startswith(RealEngGroupInfo.typeHead):
-            data['type'] = strLine.replace(RealEngGroupInfo.typeHead, '').strip()
-            i += 1
-        elif strLine.startswith(RealEngGroupInfo.titleHead):
-            data['title'] = strLine.replace(RealEngGroupInfo.titleHead, '').strip()
-            i += 1
-        elif strLine.startswith(RealEngGroupInfo.channelHead):
-            data['channel'] = strLine.replace(RealEngGroupInfo.channelHead, '').strip()
-            i += 1
-        elif strLine.startswith(RealEngGroupInfo.tagHead):
-            data['tag'] = strLine.replace(RealEngGroupInfo.tagHead, '').strip()
-            i += 1
-        elif strLine.startswith(RealEngGroupInfo.campHead):
-            data['lessonCamp'] = strLine.replace(RealEngGroupInfo.campHead, '').strip()
-            i += 1
-        elif strLine.startswith(RealEngGroupInfo.indexInCampHead):
-            ss = strLine.replace(RealEngGroupInfo.indexInCampHead, '').strip()
-            if len(ss) == 0:
-                data['indexInCamp'] = 0
-            else:
-                data['indexInCamp'] = int(ss)
-            i += 1
-        elif strLine.startswith(RealEngGroupInfo.wordListStart):
-            i += 1
-            data['wordItemStr']=''
+            data['wordItemStr'] = ''
             wordLines = ''
             wordStr = lines[i].strip()
             while i < len(lines) and not wordStr.startswith(RealEngGroupInfo.wordListEnd):
-                if wordStr.__contains__('='):
-                    wordLines += wordStr
+                if len(wordStr) > 0:
+                    if len(wordLines) > 0 and not wordStr.startswith(wordItemSplitStr):
+                        wordLines += '\n' + wordStr
+                    else:
+                        wordLines += wordStr
                 i += 1
                 wordStr = lines[i].strip()
-
             if len(wordLines) > 0:
                 wordItemStr = parseWords(wordLines)
                 if len(wordItemStr) > 0:
                     data['wordItemStr'] = wordItemStr
+            continue
 
-        else:
-            print('')
+        if not RealEngGroupInfo.lessonEditElementList.__contains__(lineKey):
             i += 1
+            continue
+        lineContent=''
+        if len(heads) >= 2:
+            lineContent = heads[1].strip()
+
+        if lineKey == RealEngGroupInfo.vid:
+            data = OrderedDict()
+            data[lineKey] = lineContent
+            if len(data[lineKey]) > 0:
+                data_list.append(data)
+            i += 1
+            continue
+
+        if lineKey == RealEngGroupInfo.indexInCamp:
+            if len(lineContent) == 0:
+                data['indexInCamp'] = 0
+            else:
+                data['indexInCamp'] = int(lineContent)
+            i += 1
+            continue
+
+        if RealEngGroupInfo.lessonEditElementList.__contains__(lineKey):
+            data[lineKey] = lineContent
+            i += 1
+            continue
 
     j = json.dumps(data_list)
-
     for dd in data_list:
         ff =  folderPath + dd['vid'] + '=' + dd['title'] + '_info.txt'
-
         word = dd['wordItemStr']
         with open(ff, 'w+') as f:
             f.write(word)
@@ -148,10 +228,12 @@ def generateLessons(path, groupIndex, name) -> []:
     cloudInfoFile = path + name + cloudInfoTail
     groupInfoFile = path + name + infoJsonTail
     outFilePath = path + name + lessonsJsonTail
+    cloudInfoJsonList=[]
 
-    f = io.open(cloudInfoFile, "r+")
-    s = f.read()
-    cloudInfoJsonList = json.loads(s)
+    if os.path.isfile(cloudInfoFile):
+        f = io.open(cloudInfoFile, "r+")
+        s = f.read()
+        cloudInfoJsonList = json.loads(s)
 
     f = io.open(groupInfoFile, "r+")
     s = f.read()
@@ -181,7 +263,11 @@ def generateLessons(path, groupIndex, name) -> []:
         itemsDict[vid] = ci
     for gi in groupInfoJsonList:
         vid = gi[keyVid]
-        mm = {**gi, **itemsDict[vid], **srtDicts[vid]}
+        if len(itemsDict) > 0:
+            mm = {**gi, **itemsDict[vid], **srtDicts[vid]}
+        else:
+            mm = {**gi, **srtDicts[vid]}
+
         mm['groupIndex']=groupIndex
         dataList.append(mm)
 

@@ -4,6 +4,7 @@ from collections import OrderedDict
 import realEngUtils
 from bmob import *
 import ssl
+import  RealEngGroupInfo
 
 
 from realEngCloudUtil import parseHuaweiCloudXlsx
@@ -13,6 +14,8 @@ import time
 #upload
 bmobAppKey = "ba096f73f0149e0ed309f0f2cbb62017"
 restkey = "e87334609894906ca2473b1288e8f891"
+
+
 
 def addLessonsToServer(groupIndex, lessonList):
     bmob = Bmob(bmobAppKey, restkey)
@@ -87,10 +90,40 @@ def addLessonsCampItem(groupIndex):
             data.pop('createdAt', None)
             data.pop('updatedAt', None)
             rr = bmob.update('Lesson', objectId, data)
-            print('added lesson:'  + '\nresponse:' + json.dumps(rr.jsonData))
+            print('added lesson camp:'   +'\n' + json.dumps(data) + '\nresponse:'+ json.dumps(rr.jsonData))
 
             # {"desc": "Wave", "campItemList": [{"desc": "", "index": 1, "time": 1657256488}]}
 
 
+def updateWordsAndSrtToServer(groupIndex, lessonList):
+    bmob = Bmob(bmobAppKey, restkey)
+    ssl._create_default_https_context = ssl._create_unverified_context
 
+    bmobQue = BmobQuerier()
+    bmobQue.addWhereEqualTo('groupIndex', groupIndex)
+    jsonData = bmob.find("Lesson", bmobQue).jsonData
+    existLessons = jsonData['results']
+
+    existDict = OrderedDict()
+    for existLesson in existLessons:
+        if existLesson.__contains__('vid') and len(existLesson['vid']) > 0:
+            existDict[existLesson['vid']] = existLesson
+
+    for lesson in lessonList:
+        originVid = lesson[realEngUtils.keyVid];
+        vid = originVid + "=" + lesson['title']+'.mp4'
+
+        # bmobQue.addWhereEqualTo(realEngUtils.keyVid, vid)
+        if not existDict.__contains__(vid):
+            print('')
+        else:
+            el = existDict[vid]
+            objectId = el['objectId']
+            data = dict()
+            data[RealEngGroupInfo.vid]=originVid
+            data[RealEngGroupInfo.subStr]=lesson[RealEngGroupInfo.subStr]
+            data[RealEngGroupInfo.wordItemStr]=lesson[RealEngGroupInfo.wordItemStr]
+
+            rr = bmob.update('Lesson', objectId, lesson)
+            print('existed lesson:' + vid + '\nresponse:' + str(rr.jsonData))
 

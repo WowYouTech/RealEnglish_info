@@ -19,13 +19,12 @@ assetPath = "/Users/steveyang/EnglishAppProject/RealEnglish/appRealEnglish/src/d
 
 # parseHuaweiCloudXlsx(originPath, groupName)
 
-# parseGroupInfoToJson(originPath, infoFilePath, infoOutPath)
+realEngUtils.generateGroupInfoFile(originPath, groupName)
 
+# parseGroupInfoToJson(originPath, infoFilePath, infoOutPath)
 lessonList = generateLessons(originPath, groupIndex, groupName)
 
-addLessonsToServer(groupIndex, lessonList)
-
-addLessonsCampItem(groupIndex)
+updateWordsAndSrtToServer(groupIndex, lessonList)
 
 
 

@@ -62,7 +62,7 @@ class FLACConverter(object): # pylint: disable=too-few-public-methods
             start = max(0, start - self.include_before)
             end += self.include_after
             temp = tempfile.NamedTemporaryFile(suffix='.flac')
-            command = ["ffmpeg", "-ss", str(start), "-t", str(end - start),
+            command = ["/usr/local/bin/ffmpeg", "-ss", str(start), "-t", str(end - start),
                        "-y", "-i", self.source_path,
                        "-loglevel", "error", temp.name]
             use_shell = True if os.name == "nt" else False
@@ -173,10 +173,10 @@ def extract_audio(filename, channels=1, rate=16000):
     if not os.path.isfile(filename):
         print("The given file does not exist: {}".format(filename))
         raise Exception("Invalid filepath: {}".format(filename))
-    if not which("ffmpeg"):
-        print("ffmpeg: Executable not found on machine.")
-        raise Exception("Dependency not found: ffmpeg")
-    command = ["ffmpeg", "-y", "-i", filename,
+    # if not which("ffmpeg"):
+    #     print("ffmpeg: Executable not found on machine.")
+    #     raise Exception("Dependency not found: ffmpeg")
+    command = ["/usr/local/bin/ffmpeg", "-y", "-i", filename,
                "-ac", str(channels), "-ar", str(rate),
                "-loglevel", "error", temp.name]
     use_shell = True if os.name == "nt" else False
