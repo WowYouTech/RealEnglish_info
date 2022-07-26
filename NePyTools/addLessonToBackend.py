@@ -8,9 +8,9 @@ import ssl
 from bombBackend import *
 from realEngCloudUtil import parseHuaweiCloudXlsx
 from realEngUtils import parseGroupInfoToJson, generateLessons
+from srtToJson import convertSrtToJson
 
-
-groupIndex = 1
+groupIndex = 2
 groupName = 'wave_' + str(groupIndex)
 originPath = '/Users/steveyang/EnglishAppProject/SnapVideos/'+groupName+'/'
 infoFilePath = originPath + groupName + '_info_e.txt'
@@ -19,7 +19,10 @@ assetPath = "/Users/steveyang/EnglishAppProject/RealEnglish/appRealEnglish/src/d
 
 # parseHuaweiCloudXlsx(originPath, groupName)
 
-# parseGroupInfoToJson(originPath, infoFilePath, infoOutPath)
+#####lesson srt
+convertSrtToJson(originPath)
+
+parseGroupInfoToJson(originPath, infoFilePath, infoOutPath)
 
 lessonList = generateLessons(originPath, groupIndex, groupName)
 

@@ -21,6 +21,7 @@ chineseCode='zh-CN'
 englishCode='en'
 contextHead='??'
 wordItemSplitStr='!!!!'
+wordContentSplitStr='='
 
 
 def generateGroupInfoFile(path, groupname):
@@ -90,7 +91,7 @@ def parseWords(wordLine) -> str:
     wordList=[]
     for ss in sa:
         word = OrderedDict()
-        wordSplits = ss.split('=')
+        wordSplits = ss.split(wordContentSplitStr)
         word['matchStr']=''
 
         if len(wordSplits) >= 5 and len(wordSplits[0]) > 0:
