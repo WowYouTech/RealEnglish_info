@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="YoudaoOCROnline">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/yd-ocr-demo/libs/YoudaoOCROnline.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

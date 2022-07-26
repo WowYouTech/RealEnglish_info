@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: __local_jars__:D.\test\translateDemo-Android-1.8\Youdao-TranslateDemo\app\libs\YoudaoBase.jar:unspecified@jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/app/libs/YoudaoBase.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
