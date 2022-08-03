@@ -200,8 +200,18 @@ def parseGroupInfoToJson(folderPath, filePath, outFilePath):
             continue
 
     j = json.dumps(data_list)
+
+    fileTitleDict = OrderedDict()
+    for filename in os.listdir(folderPath):
+        if filename.endswith('.mp4') and filename.__contains__(RealEngGroupInfo.fileNameSplitStr):
+            sp = filename.split(RealEngGroupInfo.fileNameSplitStr)
+            vid = sp[0]
+            name = sp[1].replace('.mp4','')
+            fileTitleDict[vid]=name
+
     for dd in data_list:
-        ff =  folderPath + dd['vid'] + '=' + dd['title'] + '_info.txt'
+        vid = dd['vid']
+        ff =  folderPath + vid + '=' + fileTitleDict[vid] + '_info.txt'
         word = dd['wordItemStr']
         with open(ff, 'w+') as f:
             f.write(word)
@@ -225,7 +235,7 @@ lessonDefaultType='snap_video'
 lessonDefaultChannel='funny'
 lessonDefaultCamp='hot'
 
-def generateLessons(path, groupIndex, name) -> []:
+def generateLessonsHuawei(path, groupIndex, name) -> []:
     cloudInfoFile = path + name + cloudInfoTail
     groupInfoFile = path + name + infoJsonTail
     outFilePath = path + name + lessonsJsonTail
@@ -245,9 +255,9 @@ def generateLessons(path, groupIndex, name) -> []:
     itemsDict = OrderedDict()
     srtDicts = OrderedDict()
 
-    splitStr = '='
+
     for filename in os.listdir(path):
-        if filename.endswith('.mp4') and filename.__contains__(splitStr):
+        if filename.endswith('.mp4') and filename.__contains__(RealEngGroupInfo.fileNameSplitStr):
             srtFileName = filename.replace('.mp4','.txt')
             srtPath = path + srtFileName
 
@@ -256,7 +266,7 @@ def generateLessons(path, groupIndex, name) -> []:
 
             srtDict = OrderedDict()
             srtDict[keySubStr]=subStr
-            vid = srtFileName.split(splitStr)[0]
+            vid = srtFileName.split(RealEngGroupInfo.fileNameSplitStr)[0]
             srtDicts[vid] = srtDict
 
     for ci in cloudInfoJsonList:
@@ -268,6 +278,58 @@ def generateLessons(path, groupIndex, name) -> []:
             mm = {**gi, **itemsDict[vid], **srtDicts[vid]}
         else:
             mm = {**gi, **srtDicts[vid]}
+
+        mm['groupIndex']=groupIndex
+        dataList.append(mm)
+
+    ss = json.dumps(dataList)
+
+    with open(outFilePath, 'w+') as f:
+        f.write(ss)
+
+    return dataList
+
+import urllib.parse
+
+def generateLessons(path, groupIndex, name) -> []:
+    groupInfoFile = path + name + infoJsonTail
+    outFilePath = path + name + lessonsJsonTail
+
+
+    f = io.open(groupInfoFile, "r+")
+    s = f.read()
+    groupInfoJsonList = json.loads(s)
+
+    dataList = []
+
+    itemsDict = OrderedDict()
+
+    srtDicts = OrderedDict()
+
+    for filename in os.listdir(path):
+        if filename.endswith('.mp4') and filename.__contains__(RealEngGroupInfo.fileNameSplitStr):
+            name = filename.replace('.mp4','')
+            srtFileName = filename.replace('.mp4','.txt')
+            srtPath = path + srtFileName
+
+            f = io.open(srtPath, "r+")
+            subStr = f.read()
+
+            srtDict = OrderedDict()
+            srtDict[keySubStr]=subStr
+            vid = srtFileName.split(RealEngGroupInfo.fileNameSplitStr)[0]
+            srtDicts[vid] = srtDict
+
+            pp = 'https://wowenglish.blob.core.windows.net/' + 'wave' + str(groupIndex) + '/' + name
+            ci = OrderedDict()
+            itemsDict[vid] = ci
+            ci['contentUrl'] = pp + '.mp4'
+            ci['coverUrl'] = pp + '.jpg'
+
+
+    for gi in groupInfoJsonList:
+        vid = gi[keyVid]
+        mm = {**gi, **itemsDict[vid], **srtDicts[vid]}
 
         mm['groupIndex']=groupIndex
         dataList.append(mm)

@@ -11,6 +11,8 @@ desc='desc'
 wordItemStr='wordItemStr'
 subStr='subStr'
 
+fileNameSplitStr='='
+
 splitStr=': '
 
 # vidHead = vid + splitStr
